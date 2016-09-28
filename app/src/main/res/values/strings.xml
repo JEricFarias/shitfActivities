@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ShiftAtivities</string>
+    <string name="digite_primeiroNome">Digite o seu primeiro nome</string>
+    <string name="digite_segundoNome">Digite o seu sobrenome</string>
+    <string name="digite_contato">Digite seu número pra contato</string>
+    <string name="digite_email">Digite seu Email</string>
+    <string name="activity_name_cadastro_contato">Add Contato</string>
+</resources>

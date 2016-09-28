@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Contato"
+        android:id="@+id/activityCadastroTextViewCadastroContato"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="15pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:id="@+id/acativityCadastroTextViewNome"
+        android:layout_below="@+id/activityCadastroTextViewCadastroContato"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/acativityCadastroEditTextNome"
+        android:layout_alignTop="@+id/acativityCadastroTextViewNome"
+        android:layout_toRightOf="@+id/acativityCadastroTextViewSobrenome"
+        android:layout_toEndOf="@+id/acativityCadastroTextViewSobrenome"
+        android:hint="@string/digite_primeiroNome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobrenome:"
+        android:id="@+id/acativityCadastroTextViewSobrenome"
+        android:layout_below="@+id/acativityCadastroEditTextNome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/acativityCadastroEditTextSobrenome"
+        android:layout_alignTop="@+id/acativityCadastroTextViewSobrenome"
+        android:layout_alignLeft="@+id/acativityCadastroEditTextNome"
+        android:layout_alignStart="@+id/acativityCadastroEditTextNome"
+        android:hint="@string/digite_segundoNome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:id="@+id/acativityCadastroTextViewTelefone"
+        android:layout_below="@+id/acativityCadastroEditTextSobrenome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/acativityCadastroEditTextTelefone"
+        android:layout_alignTop="@+id/acativityCadastroTextViewTelefone"
+        android:layout_alignLeft="@+id/acativityCadastroEditTextSobrenome"
+        android:layout_alignStart="@+id/acativityCadastroEditTextSobrenome"
+        android:hint="@string/digite_contato"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/acativityCadastroTextViewEmail"
+        android:layout_below="@+id/acativityCadastroEditTextTelefone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/acativityCadastroEditTextEmail"
+        android:layout_below="@+id/acativityCadastroEditTextTelefone"
+        android:layout_alignLeft="@+id/acativityCadastroEditTextTelefone"
+        android:layout_alignStart="@+id/acativityCadastroEditTextTelefone"
+        android:hint="@string/digite_email"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/acativityCadastroBtnCadastrar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+</RelativeLayout>
