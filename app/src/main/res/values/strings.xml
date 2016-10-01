@@ -5,4 +5,6 @@
     <string name="digite_contato">Digite seu número pra contato</string>
     <string name="digite_email">Digite seu Email</string>
     <string name="activity_name_cadastro_contato">Add Contato</string>
+    <string name="activity_main_btnCadatrar">Cadastrar</string>
+    <string name="activity_main_txwTitulo">Pessoas Cadastradas</string>
 </resources>

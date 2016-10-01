@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pessoas Cadastradas"
+        android:text="@string/activity_main_txwTitulo"
         android:id="@+id/acativityMainPessoasCadastradas"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -32,10 +32,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cadastrar"
+        android:text="@string/activity_main_btnCadatrar"
         android:id="@+id/activityMainBtnCadastrar"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:elevation="0dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
