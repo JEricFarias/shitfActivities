@@ -23,8 +23,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/activityMainListView"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/activityMainBtnCadastrar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
         android:layout_below="@+id/acativityMainPessoasCadastradas" />
 
     <Button
@@ -33,6 +35,7 @@
         android:text="Cadastrar"
         android:id="@+id/activityMainBtnCadastrar"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:elevation="0dp" />
 
 </RelativeLayout>

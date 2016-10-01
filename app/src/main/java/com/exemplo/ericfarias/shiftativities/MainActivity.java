@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
+
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -22,6 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnCadastrar;
     private ListView listaContatos;
+    private ContatoAdapter adapter;
+
+
+    /**
+     *
+     * Factory view
+     *
+     * */
+    private void montarListView(){
+        listaContatos = (ListView) findViewById(R.id.activityMainListView);
+        ContatoAdapter adapter = new ContatoAdapter(this, contatos);
+        listaContatos.setAdapter(adapter);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +48,7 @@ public class MainActivity extends AppCompatActivity {
         btnCadastrar = (Button) findViewById(R.id.activityMainBtnCadastrar);
 
         // Cria um objeto list view, cria um adapter, serta o dapter na lista.
-        listaContatos = (ListView) findViewById(R.id.activityMainListView);
-        ContatoAdapter adapter = new ContatoAdapter(this, contatos);
-        listaContatos.setAdapter(adapter);
+        montarListView();
 
         Toast.makeText(getBaseContext(), "numero elementos = " + contatos.size(),Toast.LENGTH_LONG).show();
 
@@ -57,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
             if(resultCode == RESULT_OK){
                 Bundle dados = intent.getExtras();
                 contatos.add( (Contato) dados.getSerializable("contato"));
-                Toast.makeText(getBaseContext(), "numero elementos = " + contatos.size(),Toast.LENGTH_LONG).show();
+
+                montarListView();
             }
         }
     }
